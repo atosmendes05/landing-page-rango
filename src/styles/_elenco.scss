@@ -1,0 +1,39 @@
+
+.elenco {
+
+
+    h2 {
+       
+        margin-top: 20px;
+        padding-top: 20px;
+        font-size: 1.2rem;
+        border-top: 1px solid ;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 20px 12px;
+
+        @media (max-width: 851px) {
+            grid-template-columns: repeat(2, 2fr);
+         }
+
+       
+        &__item {
+            list-style: none;
+            text-align: center;
+
+
+            img {
+                width: 80%;
+                border-radius: 100px;
+            }
+
+
+            span {
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}

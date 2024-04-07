@@ -1,0 +1,65 @@
+
+.sobre {
+    background-color: whitesmoke;
+    margin-top: 32px;
+    margin-bottom: 32px;
+   
+
+    h2 {
+        padding: 13px 0;
+        font-size: 1.2rem;
+    }
+    
+
+    &__content {
+        list-style: none;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px 12px;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        &__item {
+            background-color: #fff;
+            padding: 14px 16px;
+            border-radius: 10px;
+
+            span {
+                margin-top: 5px;
+            }
+            @media (max-width: 768px) {
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .icon {
+            align-items: center;
+            display: flex;
+            gap: 5px;
+            img {
+                width: 10%;
+            }
+            span {
+                font-size: 17px;
+            }
+            
+        }
+
+
+        .card {
+
+            &__item {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

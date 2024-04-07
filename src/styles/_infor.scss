@@ -1,0 +1,25 @@
+
+.informaçoes {
+    background-color: whitesmoke;
+   
+
+    &__content {
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+        
+    }
+
+    h3 {
+        font-size: 1.2em;
+        margin-bottom: 13px;
+    }
+
+}
+
+.text-span {
+    margin-bottom: 10px;
+
+    span {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}

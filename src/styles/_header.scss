@@ -1,0 +1,107 @@
+
+.header {
+    background-color: #000;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    &__content {
+       text-align: center;
+       display: grid;
+       width: 100%;
+       grid-template-columns: 30% 30%;
+       justify-content: end;
+       align-items: center;
+       padding: 12px 0;
+       
+       .botao {
+         padding: 0 10px;
+         display: flex;
+         align-items: center;
+
+         @media (min-width: 851px) {
+          display: none;
+       }
+
+       }
+       
+       
+
+       @media (max-width: 851px) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+       }
+
+       &__links {
+        display: flex;
+        gap: 20px;
+
+          &__item {
+            list-style: none;
+
+
+              a {
+                text-decoration: none;
+                color: #fff;
+                
+                @media (max-width: 851px) {
+                   font-size: 12px;
+                }
+
+
+                span {
+                    color: #ffffffA3;
+
+                    &:hover {
+                        color: #fff;
+                    }
+
+                    @media (max-width: 851px) {
+                      display: none;
+                   }
+                }
+              }
+          }
+       }
+
+       form {
+        
+          input {
+            padding: 0 26px;
+            max-width: 142px;
+            min-width: 102px;
+            width: 50%;
+            height: 28px;
+            border: 1px solid #fff;
+            font-size: 15px;
+            background-color: transparent;
+            border-radius: 4px;
+
+              @media (max-width: 851px) {
+                display: none;
+              }
+          }
+
+          button {
+            height: 28px;
+            border-radius: 6px;
+            font-size: 13px;
+            padding: 0 12px;
+            background-color: #007aff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+
+            @media (max-width: 851px) {
+              display: none;
+              
+           }
+          }
+       }
+    }
+
+
+}
